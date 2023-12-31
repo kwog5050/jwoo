@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 import * as Style from './style.js'
 
-const Banner = () => {
+const Banner = forwardRef((props, ref) => {
     return (
-        <Style.Banner>
+        <Style.Banner ref={ref}>
             <Style.Content>
                 <h2>안녕하세요 끊임없이 노력하는</h2>
                 <h3>신입 프론트엔드 개발자 권정우입니다</h3>
@@ -12,6 +12,6 @@ const Banner = () => {
             </Style.Content>
         </Style.Banner>
     );
-};
+});
 
 export default Banner;

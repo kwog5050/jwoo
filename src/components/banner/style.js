@@ -25,6 +25,7 @@ export const Content = styled.div`
     top: 55%;
     left: 50%;
     transform: translate(-50%,-50%);
+    width: 100%;
     text-align: center;
     color: #fff;
     line-height: 1.2;
@@ -34,5 +35,8 @@ export const Content = styled.div`
         font-size: 16px;
         margin-top: 30px;
         font-family: 'Pretendard-Regular';
+    }
+    @media (max-width:1000px) {
+        font-size: 24px;
     }
 `

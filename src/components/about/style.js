@@ -12,7 +12,7 @@ export const About = styled.div`
         justify-content: center;
         align-items: center;
         gap: 30px;
-        margin-top: 30px;
+        margin-top: 50px;
         li{
             display: flex;
             flex-direction: column;

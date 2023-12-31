@@ -11,7 +11,7 @@ export const Project = styled.div`
         display: flex;
         flex-direction: column;
         gap: 30px;
-        margin-top: 30px;
+        margin-top: 50px;
         li{
             display: grid;
             grid-template-columns: 500px 1fr;
@@ -19,6 +19,8 @@ export const Project = styled.div`
             img{
                 width: 500px;
                 height: 500px;
+                box-shadow: 2px 2px 2px #00000044;
+                border-radius: 15px;
             }
             .content{
                 h3{

@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 import * as Stlye from './style.js'
 
-const About = () => {
+const About = forwardRef((props, ref) => {
     return (
         <div className="wrap">
-            <Stlye.About>
+            <Stlye.About ref={ref}>
                 <h2>ABOUT</h2>
                 <ul>
                     <li><img src="" alt="" /></li>
@@ -37,6 +37,6 @@ const About = () => {
             </Stlye.About>
         </div>
     );
-};
+});
 
 export default About;

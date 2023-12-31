@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 import * as Style from './style.js';
 
-const Skill = () => {
+const Skill = forwardRef((props, ref) => {
     return (
-        <Style.Skill>
+        <Style.Skill ref={ref}>
             <div className="wrap">
-                <h2>SKILL</h2>
+                <h2>SKILLS</h2>
 
                 <ul>
                     <li>
@@ -50,6 +50,6 @@ const Skill = () => {
             </div>
         </Style.Skill>
     );
-};
+});
 
 export default Skill;

@@ -1,21 +1,22 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 import * as Style from './style.js';
 
-const Project = () => {
+import portfolioImage01 from 'assets/images/portfolio01.jpg'
+
+const Project = forwardRef((props, ref) => {
     return (
-        <Style.Project>
+        <Style.Project ref={ref}>
             <div className="wrap">
                 <h2>PROJECT</h2>
                 <ul>
                     <li>
-                        <img src="" alt="" />
+                        <img src={portfolioImage01} alt="" />
                         <div className="content">
                             <h3>JWOO PORTFOLIO</h3>
                             <div>
                                 <p>
-                                    style을 관리하기 용이하게 styled-components를 사용했으며 <br />
-                                    pc, mobile 고려해 반응형으로 제작했습니다
+                                    프론트엔드로 취업하기 위해 제작된 포트폴리오입니다
                                 </p>
                             </div>
                             <div>
@@ -32,11 +33,11 @@ const Project = () => {
                             </div>
                             <div>
                                 <h4>Git Hub URL</h4>
-                                <p><a href="">PORTFOLIO</a></p>
+                                <p><a href="">Git Hub</a></p>
                             </div>
                         </div>
                     </li>
-                    <li>
+                    {/* <li>
                         <img src="" alt="" />
                         <div className="content">
                             <h3>프로젝트명자리</h3>
@@ -44,11 +45,11 @@ const Project = () => {
                             <h4>사용기술</h4>
                             <h4>사용기술</h4>
                         </div>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </Style.Project>
     );
-};
+});
 
 export default Project;
