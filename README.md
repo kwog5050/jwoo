@@ -3,5 +3,8 @@
 
 ## 설치
 ```
+npm install react-router-dom@6.16.0
+```
+```
 npm install styled-components@6.0.8
 ```
