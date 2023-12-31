@@ -1,8 +1,5 @@
 # REACT PORTFOLIO PROJECT
+프론트엔드로 취업하기 위해 제작된 포트폴리오입니다
 
 ## 설치
-
-## 프로젝트 소개
-style을 관리하기 용이하게 styled-components를 사용했으며
-
-pc, mobile 고려해 반응형으로 제작했습니다
+  npm install styled-components@6.0.8
