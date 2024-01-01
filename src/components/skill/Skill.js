@@ -37,7 +37,7 @@ const Skill = forwardRef((props, ref) => {
                             style-components를 사용하여 스타일링을 좀 더 관리에 용이하게 작업 <br />
                             axios를 사용해 backend와 통신 <br />
                             useEffect를 사용해 재랜더링없이 데이터 변환 <br />
-                            redux-toolki을 활용해 데이터 전역관리
+                            redux-toolkit을 활용해 데이터 전역관리
                         </p>
                     </li>
                     {/* <li>

@@ -39,4 +39,7 @@ export const Content = styled.div`
     @media (max-width:1000px) {
         font-size: 24px;
     }
+    @media (max-width:450px) {
+        font-size: 20px;
+    }
 `

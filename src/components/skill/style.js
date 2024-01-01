@@ -5,7 +5,7 @@ export const Skill = styled.div`
     padding: 100px 0px;
     position: relative;
     .wrap{
-        width: 700px;
+        max-width: 700px;
     }
     &::after{
         content: "";
@@ -61,6 +61,23 @@ export const Skill = styled.div`
             }
             &:hover{
                 transform: translate(-10px, -10px);
+            }
+        }
+    }
+    @media (max-width:600px) {
+        ul{
+            li{
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    }
+    @media (max-width:400px) {
+        ul{
+            li{
+                p{
+                    font-size: 14px;
+                }
             }
         }
     }

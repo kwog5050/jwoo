@@ -6,11 +6,12 @@ export const Project = styled.div`
         font-size: 40px;
         text-align: center;
         color: #000;
+        text-shadow: 3px 3px 3px #00000055;
     }
     ul{
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 50px;
         margin-top: 50px;
         li{
             display: grid;
@@ -36,10 +37,43 @@ export const Project = styled.div`
                         font-family: 'Pretendard-Regular';
                         color: #444;
                         margin-top: 5px;
+                        line-height: 1.2;
                     }
                     a{
                         font-size: 18px;
                     }
+                }
+            }
+        }
+    }
+    @media (max-width:850px) {
+        ul{
+            li{
+                text-align: center;
+                grid-template-columns: 1fr;
+                img{
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    @media (max-width:500px) {
+        ul{
+            li{
+                img{
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+        }
+    }
+
+    @media (max-width:400px) {
+        ul{
+            li{
+                img{
+                    width: 280px;
+                    height: 280px;
                 }
             }
         }

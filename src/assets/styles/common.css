@@ -51,7 +51,8 @@ color: black; */
 .wrap {
     /* display: inline-block; */
     margin: 0px auto;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%
 }
 
 .pc {

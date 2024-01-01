@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const About = styled.div`
-    padding: 50px 0px;
+    padding: 100px 0px;
     h2{
         text-align: center;
         font-size: 40px;
@@ -14,9 +14,12 @@ export const About = styled.div`
         gap: 30px;
         margin-top: 50px;
         li{
-            display: flex;
+            /* display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 15px; */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 15px;
             img{
                 width: 300px;
                 height: 370px;
@@ -41,12 +44,31 @@ export const About = styled.div`
             }
         }
     }
-
     > p{
-        margin-top: 100px;
-        font-size: 24px;
+        margin-top: 50px;
+        font-size: 18px;
         font-family: 'Pretendard-Regular';
         text-align: center;
-        line-height: 1.2;
+        line-height: 1.5;
+    }
+    @media (max-width:600px) {
+        ul{
+            li{
+                grid-template-columns: 1fr;
+                span{
+                    width: 300px;
+                }
+            }
+        }
+        > p{
+            br{
+                display: none;
+            }
+        }
+    }
+    @media (max-width:450px) {
+        > p{
+            font-size: 14px;
+        }
     }
 `
