@@ -67,7 +67,29 @@ export const Project = styled.div`
             }
         }
     }
-
+    @media (max-width:450px) {
+        h2{
+            font-size: 30px;
+        }
+        ul{
+            li{
+                .content{
+                    h3{
+                        font-size: 22px;
+                    }
+                    div{
+                        h4{
+                            font-size: 18px;
+                        }
+                        p{
+                            font-size: 14px;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
     @media (max-width:400px) {
         ul{
             li{

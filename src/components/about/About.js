@@ -20,7 +20,7 @@ const About = forwardRef((props, ref) => {
                         </span>
                         <span>
                             <h3>연락처</h3>
-                            <h4>010-0000-0000</h4>
+                            <h4>010-7181-3987</h4>
                         </span>
                         <span>
                             <h3>이메일</h3>

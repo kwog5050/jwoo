@@ -67,6 +67,9 @@ export const About = styled.div`
         }
     }
     @media (max-width:450px) {
+        h2{
+            font-size: 30px;
+        }
         > p{
             font-size: 14px;
         }

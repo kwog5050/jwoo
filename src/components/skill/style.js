@@ -72,6 +72,19 @@ export const Skill = styled.div`
             }
         }
     }
+    @media (max-width:450px) {
+        h2{
+            font-size: 30px;
+        }
+        ul{
+            li{
+                p{
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
     @media (max-width:400px) {
         ul{
             li{

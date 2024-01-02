@@ -28,4 +28,19 @@ export const Contact = styled.div`
             }
         }
     }
+    @media (max-width:450px) {
+        h2{
+            font-size: 30px;
+        }
+        ul{
+            li{
+                b{
+                    font-size: 16px;
+                }
+                span{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 `
